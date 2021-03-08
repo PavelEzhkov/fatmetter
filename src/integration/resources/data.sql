@@ -1,0 +1,17 @@
+INSERT INTO DISH (ID, NAME) VALUES
+(1, 'Test Dish');
+
+INSERT INTO PRODUCT (ID,ADDITIVE, CALORIES, NAME) VALUES
+(1, false, '252', 'bread'),
+(2, false, '717', 'butter'),
+(3, false, '160', 'avocado');
+
+INSERT INTO INGREDIENT (ID, WEIGHT, DISH_ID, PRODUCT_ID) VALUES
+(1,'150', 1, 1),
+(2,'30', 1, 2),
+(3,'50', 1, 3);
+
+INSERT INTO DISH_INGREDIENTS (DISH_ID, INGREDIENTS_ID) VALUES
+(1,1),
+(1,2),
+(1,3);
